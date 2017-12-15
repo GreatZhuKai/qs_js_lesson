@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="people">
+      <p>Wes</p>
+      <p>Kait</p>
+      <p>Randy</p>
+    </div>
+</body>
+<script>
+//   获取页面上的元素p
+//   将这些名字串联起, 中间用,隔开
+//数组 多个元素  类数组 转换成真正的数组
+//通过document.querySelectorAll 得到的是类数组
+//Array.from 
+const people = 
+  Array.from(
+    document.querySelectorAll('.people p')
+);
+//console.log(people.join());
+//map()把每个元素通过函数传递到当前匹配集合中，生成包含返回值的新的 jQuery 对象。
+//join() 方法用于把数组中的所有元素放入一个字符串。
+  const strNames = people.map(person => person.innerHTML).join('');
+  console.log(strNames);
+//   for (let i = 0,len = people.length;i < len; i++) {
+//      names.push(people[i].innerHTML);
+//   }
+
+// let p = document.querySelectorAll('p');
+// console.log(p);
+//         const data = p.length;
+//         let a = [];
+//         //textContent,innerText 查询或者设置元素的文本内容
+//         for (var i = 0; i < data; i++) {
+//             a.push(p[i].textContent);
+//         }
+//         console.log(a);
+
+</script>
+</html>
