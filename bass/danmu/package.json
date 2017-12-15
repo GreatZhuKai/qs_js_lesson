@@ -1,0 +1,18 @@
+{
+  "name": "danmu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "stylelint *.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jsonlint": "^1.6.2",
+    "stylelint": "^8.3.1",
+    "stylelint-config-standard": "^18.0.0"
+  }
+}
